@@ -1,0 +1,244 @@
+
+/* 1200+ */
+
+@media screen and (min-width: 1200px){
+  .container{
+    max-width: 1158px;
+  }
+  .section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+/* ============================ HEADER ======================= */
+
+
+  .container {
+    max-width: 1158px;
+  }
+  .header {
+    padding-bottom: 28px;
+  }
+  .link-logo {
+    margin-right: 76px;
+  }
+  .address {
+    margin-left: auto;
+  }
+  .menu-address {
+    display: flex;
+  }
+  .contact-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .contact-list {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* ============================== HERO ========================= */
+   .hero{
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;         
+  }  
+  
+}
+@media screen and (min-device-pixel-radio: 1) and (min-width: 1200px),
+screen and (min-resolution: 96dpi) and (min-width: 1200px),
+screen and (min-resolution: 1dppx) and (min-width: 1200px){
+    .hero{
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);   
+    }
+}
+
+@media screen and (min-device-pixel-radio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px){
+  .hero{
+    background-image:linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
+  }
+}
+
+/* =========================== ABOUT US ========================= */
+
+/* 1200 + */
+@media screen and (min-width: 1200px){
+  .description{    
+    padding-bottom: 0;
+  }
+    .description-title-list {  
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;  
+}
+   .description-list{        
+    flex-wrap: nowrap;   
+  }
+   .description-text {
+    max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }  
+  
+  .description-menu::before {
+    display: block;
+    content: "";
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .description-menu.icon-antenna::before {
+    background-image: url("../images/about-us/antenna.svg");
+  }
+
+  .description-menu.icon-clock::before {
+    background-image: url("../images/about-us/clock.svg");
+  }
+
+  .description-menu.icon-diagram::before {
+    background-image: url("../images/about-us/diagram.svg");
+  }
+
+  .description-menu.icon-astronaut::before {
+    background-image: url("../images/about-us/astronaut.svg");
+  }
+}
+
+/* ======================== WHAT ARE WE DOING =================== */
+
+/* 1200+ */
+@media screen and (min-width: 1200px){
+  .works{
+  display: flex; 
+  }  
+}
+
+.works-container {
+  text-align: center;
+}
+
+.menu-list-works {
+  display: flex;
+  gap: 24px;
+}
+
+.works-title {
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.works-item {
+  border: 1px solid #e7e9fc;
+  flex-basis: calc((100%-48px) / 3);
+}
+
+/* =========================== OUR TEAM ======================= */
+
+/* 1200 + */
+@media screen and (min-width: 1200px){  
+  .menu-list-team{
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
+
+/* ========================== CUSTOMERS ====================== */
+
+/* 1200 + */
+@media screen and (min-width: 1200px){ 
+ .customers-list {
+  display: flex;
+  flex-wrap: nowrap;  
+  gap: 24px;
+ }
+
+ /* ========================== FOOTER ========================= */  
+
+ .footer{
+  padding-top: 100px;
+  padding-bottom: 100px;
+ }
+ .footer-container {
+  display: flex;
+ }
+ .footer-text{
+  min-width: 264px;
+ }
+ .footer-item-list {  
+  margin-right: 120px;
+ }
+ .footer-social{
+  margin-right: 80px;
+ }
+
+ /* ========================= PORTFOLIO ========================== */ 
+
+ .projects{
+   padding-top: 100px;
+   padding-bottom: 120px;
+ }
+ .button-list{
+   margin-bottom: 72px;
+ }
+ .projects-list { 
+  column-gap: 24px;
+  row-gap: 48px;  
+ }
+ .projects-photo{
+  width: 360px;    
+ }
+ .projects-team-img-wrapper {
+  position: relative;
+  overflow: hidden;
+ }
+ .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 40px 32px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: var(--button-color);
+
+  overflow: auto;
+  transform: translate(0, 100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .projects-link:hover .overlay,
+ .projects-link:focus .overlay {
+  transform: translate(0, 0);
+ }
+
+ /* ======================= MODAL WINDOW ======================== */
+
+ .modal{
+  min-height: 584px;
+ }
+}
+

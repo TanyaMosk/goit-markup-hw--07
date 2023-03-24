@@ -1,0 +1,257 @@
+
+/* 768 +  */
+
+@media screen and (min-width: 768px){
+  .container{
+    max-width: 768px;    
+  }
+
+/* ============================ HEADER ======================= */
+
+ .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+  .header {
+    padding-bottom: 22px;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .link-logo {
+    margin-right: 120px;
+    margin-left: 0px;
+  }
+  .menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .list-item {
+    position: relative;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .list-item:hover,
+  .list-item:focus {
+    color: var(--accent-color);
+  }
+  .list-item.current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+  .current {
+    color: var(--accent-color);
+  }  
+  .menu-address {
+    display: block;
+  }
+  .contact-list {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact-list:hover,
+  .contact-list:focus {
+    color: var(--accent-color);
+  }
+
+  /* ============================== HERO ========================= */
+
+  .hero{
+    max-width: 768px;   
+    padding-bottom: 108px;
+   }
+
+  .hero-title{  
+   max-width: 496px;
+   margin-bottom: 40px;
+    
+   font-size: 56px;
+   line-height: 1.07;   
+  }
+}
+
+@media screen and (min-device-pixel-radio: 1) and (min-width:768px),
+screen and (min-resolution: 96dpi) and (min-width: 768px),
+screen and (min-resolution: 1dppx) and (min-width: 768px){
+  .hero{
+    background-image:linear-gradient(
+     rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), url(../images/tablet/img-tablet-hero@1x.jpg);
+  }   
+}
+@media screen and (min-device-pixel-radio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px){
+  .hero{
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)), url(../images/tablet/img-tablet-hero@2x.jpg);
+  }
+}
+
+/* =========================== ABOUT US ========================= */
+
+/* 768 + */
+@media screen and (min-width: 768px){  
+  .description-title-list{
+    text-align: left;
+  }
+  
+  .description-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;    
+  }  
+  .description-text{
+    max-width: 356px;    
+  }
+}
+
+/* ======================== WHAT ARE WE DOING =================== */
+
+/* 768 + */
+@media screen and (min-width: 768px){
+  .works
+  {display: none;}
+}
+
+
+/* =========================== OUR TEAM ======================= */
+
+/* 768 + */
+@media screen and (min-width: 768px){ 
+  .menu-list-team{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+    justify-content: center;
+    gap:64px 24px;    
+  }  
+}
+
+/* ========================== CUSTOMERS ====================== */
+
+/* 768 + */
+@media screen and (min-width: 768px){
+ .customers-list{   
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;  
+  gap: 72px 24px;
+ }
+ .customers-list-link{
+  padding: 16px 32px;
+  width: 168px;
+ }
+ .customers-list-icon{
+  min-width: 104px;
+ }
+}
+
+/* ============================ FOOTER ========================= */
+
+/* 768 - 1199 */
+@media screen and (min-width: 768px) and (max-width: 1199px) { 
+ .footer-container{
+  max-width: 582px;
+  display: flex;    
+  flex-wrap: wrap;   
+  gap:72px 24px;    
+  }
+}
+
+/* 768 +  */
+  @media screen and (min-width: 768px){ 
+ .footer-logo{
+  justify-content: flex-start;
+ }
+ .footer-item-list{
+  max-width: 264px;   
+  margin: 0;
+ }
+ .footer-social{
+  width: 208px;
+  margin: 0;
+ } 
+ .footer-social-title{
+  text-align: start;
+ }
+ .subscribe-title{
+  text-align: start;
+ } 
+ .subscribe-form-input-wrapper{
+  display: flex;
+  flex-direction: row;    
+  gap: 24px;
+ }
+ .subscribe-form-input{
+  width: 264px;
+  margin-bottom: 0;
+ }
+ 
+ /* ========================= PORTFOLIO ========================== */
+ .projects{
+  padding-top: 64px;
+  padding-bottom: 96px;
+ }
+ .button-list{
+  max-width: 100%;
+  margin-bottom: 64px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 24px;
+ }
+ .button-portfolio{
+  padding: 12px 24px;
+ }
+ .projects-photo{
+  width: 356px;
+  height: 300px;
+ }
+ .projects-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+ }
+ .overlay{
+  display: none;
+ }
+
+ /* ======================= MODAL WINDOW ======================== */
+ .modal{
+  min-width:408px ;  
+ }
+}
+
